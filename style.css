@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* container */
+.container {
+  width: 700px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+/* title */
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* wrapper */
+.text-wrapper {
+  position: relative;
+}
+
+/* typing text */
+#text-display {
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  min-height: 100px;
+  text-align: left;
+}
+
+/* characters */
+#text-display span {
+  transition: 0.15s;
+  opacity: 0.4;
+}
+
+#text-display span.active {
+  opacity: 1;
+}
+
+.correct {
+  color: #00ff9f;
+}
+
+.wrong {
+  color: #ff4d4d;
+}
+
+.current {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+
+/* caret */
+#caret {
+  position: absolute;
+  width: 2px;
+  height: 1.6em;
+  background: #00ff9f;
+  animation: blink 1s infinite;
+  pointer-events: none;
+  transition: left 0.05s linear, top 0.05s linear;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* invisible input */
+#input-box {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* info bar */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* button */
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #00ff9f;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #00cc7a;
+}

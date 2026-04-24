@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Test</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Typing Test</h1>
+
+    <!-- TEXT AREA -->
+    <div class="text-wrapper">
+      <div id="text-display"></div>
+      <div id="caret"></div>
+    </div>
+
+    <!-- INPUT -->
+    <input id="input-box" type="text" autocomplete="off" />
+
+    <!-- STATS -->
+    <div class="info">
+      <span>Time: <span id="time">60</span>s</span>
+      <span>WPM: <span id="wpm">0</span></span>
+      <span>Accuracy: <span id="accuracy">100</span>%</span>
+      <span>Streak: <span id="streak">0</span></span>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="buttons">
+      <button onclick="startTest()">Start</button>
+      <button onclick="startTraining()">Train Weak Keys</button>
+    </div>
+
+    <!-- HISTORY -->
+    <div id="history"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
