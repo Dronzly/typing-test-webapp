@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <title>Typing Test</title>
 
+<<<<<<< HEAD
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
+=======
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+>>>>>>> 533a58d (UI and Adding more Features)
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<<<<<<< HEAD
   <div class="container">
 
     <h1>Typing Test</h1>
@@ -48,3 +53,44 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+<div class="container">
+
+  <div id="result" class="result hidden">
+    <h2>Test Complete</h2>
+    <p>WPM: <span id="final-wpm"></span></p>
+    <p>Accuracy: <span id="final-accuracy"></span>%</p>
+    <button onclick="startTest()">Retry</button>
+  </div>
+
+  <h1>Typing Test</h1>
+
+  <div class="text-wrapper">
+    <div class="text-viewport">
+      <div id="text-display"></div>
+    </div>
+    <div id="caret"></div>
+  </div>
+
+  <input id="input-box" type="text" autocomplete="off" autofocus />
+
+  <div class="info">
+    <span>Time: <span id="time">60</span>s</span>
+    <span>WPM: <span id="wpm">0</span></span>
+    <span>Accuracy: <span id="accuracy">100</span>%</span>
+    <span>Streak: <span id="streak">0</span></span>
+  </div>
+
+  <div class="buttons">
+    <button onclick="startTest()">Start</button>
+    <button onclick="startTraining()">Train Weak Keys</button>
+  </div>
+
+  <div id="history"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 533a58d (UI and Adding more Features)
